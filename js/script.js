@@ -49,6 +49,11 @@ const obj = {
             }
         },
 
+        thumbSkipper(position) {
+            this.clearTimer()
+            this.index = position
+        },
+
         // to assign active if class alrteady rendered
         isActive(position) {
             return position === this.index
