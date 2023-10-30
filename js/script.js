@@ -25,9 +25,11 @@ const obj = {
                     text: 'Marvel\'s Avengers is an epic, third-person, action-adventure game that combines an original, cinematic story with single-player and co-operative gameplay.',
                 }
             ],
-            index: 0
+            index: 0,
+            intervalTime: ''
 
         }
+
     },
     methods: {
         //moving between classes
@@ -50,10 +52,22 @@ const obj = {
         // to assign active if class alrteady rendered
         isActive(position) {
             return position === this.index
+        },
+
+        interval() {
+            this.intervalTime = setInterval(() => {
+                this.imageNext(); // call the imageNext function using 'this'
+            }, 3000);
+        },
+
+        clearTimer() {
+            clearInterval(this.intervalTime)
         }
 
+    },
+    mounted() {
+        this.interval()
     }
-
 }
 
 createApp(obj).mount('#app')
