@@ -26,8 +26,8 @@ const obj = {
                 }
             ],
             index: 0,
-            intervalTime: ''
-
+            intervalTime: '',
+            spinning: true
         }
 
     },
@@ -61,6 +61,7 @@ const obj = {
         },
 
         clearTimer() {
+            this.spinning = false
             clearInterval(this.intervalTime)
         }
 

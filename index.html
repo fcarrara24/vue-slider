@@ -16,7 +16,7 @@
         <div class="container">
             <div class="slider-wrapper" tabindex="0">
 
-                <div class="item rotateForeward">
+                <div class="item " :class="{rotateForeward: spinning}">
                     <img :src="slides[index].image" :alt="slides[index].title" />
                     <div class="text">
                         <h3>{{slides[index].title}}</h3>
