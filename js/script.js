@@ -56,8 +56,8 @@ const obj = {
 
         interval() {
             this.intervalTime = setInterval(() => {
-                this.imageNext(); // call the imageNext function using 'this'
-            }, 3000);
+                this.imageNext();
+            }, 6000);
         },
 
         clearTimer() {

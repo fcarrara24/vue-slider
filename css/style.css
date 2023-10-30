@@ -103,3 +103,21 @@ oppure i caratteri ∧ (&and;) e ∨ (&or;)
     left: 50%;
     transform: translate(-50%) rotate(135deg);
 }
+/* added to make a rotate forward effect */
+.rotateForeward{
+    animation: rotateForward 6s infinite;
+}
+
+@keyframes rotateForward {
+   
+    0%{ transform: rotateX(-90deg);}
+    5%{ transform: rotateX(-90deg);}
+
+
+    50%{ transform: rotateX(0deg);  }
+
+
+    95%{ transform: rotateX(90deg);}
+    100%{ transform: rotateX(90deg);}
+
+}
