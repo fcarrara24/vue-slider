@@ -27,7 +27,7 @@ const obj = {
             ],
             index: 0,
             intervalTime: '',
-            spinning: true
+            spinning: true,
         }
 
     },
